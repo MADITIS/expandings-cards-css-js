@@ -7,7 +7,7 @@ function mousedownHanlder(event) {
     let target = event.target
     if (target.parentElement == cards) {
         target.classList.add("active")
-        Array.from(card).forEach((value) => {
+        card.forEach((value) => {
             if (value != target) {
                 value.classList.remove("active")
             }
